@@ -99,7 +99,16 @@
     }
     function display() {
         document.getElementById('display').value=dis;
-
+    }
+    function calculate() {
+        try {
+            const result = eval(dis);
+            document.getElementById('display').value = result;
+            dis = result.toString();
+        } catch (error) {
+            document.getElementById('display').value = 'Error';
+            dis = '';
+        }
     }
 
 
