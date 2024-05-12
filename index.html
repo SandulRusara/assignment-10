@@ -88,10 +88,20 @@
         dis+=number;
         display();
     }
+    function appendOperator(operator) {
+        dis += operator;
+        display();
+    }
+
+    function clearDisplay() {
+        dis = '';
+        display();
+    }
     function display() {
         document.getElementById('display').value=dis;
 
     }
+
 
 </script>
 </body>
